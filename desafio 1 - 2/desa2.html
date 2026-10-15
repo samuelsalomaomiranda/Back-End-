@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Estacionmento do tarado, majamos o seu carro!</title>
+</head>
+<body>
+  <h2>Responda esse formulário após buscar o seu carro conosco!</h2>
+  <hr>
+  <p>Escolha o tipo de veículo entre: </p>
+  <h4>1 - carro </h4>
+  <h4>2 - moto </h4>
+  <h4>3 - caminhonete</h4>
+  
+  <form action="desa2.php" method="post">
+    <table>
+      <tr>
+        <td><label>Por favor digite o seu nome: </label></td>
+        <td><input type="text" name="nome" required></td>
+      </tr>
+      <tr>
+        <td><label>Qual das 3 opções é o seu veículo: </label></td>
+        <td><input type="number" name="veiculo" required></td>
+      </tr>
+        <tr>
+        <td><label>Digite quantas horas ficou estacionado: </label></td>
+        <td><input type="number" name="horas" required></td>
+      </tr>
+      <tr>
+        <td></td> 
+        <td>
+          <button type="submit">Pagar</button>
+          <button type="reset">Limpar</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

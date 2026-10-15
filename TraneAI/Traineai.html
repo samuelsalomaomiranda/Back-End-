@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traneAI - Especialista em Treinos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logotraneai.png">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="logotraneai.png" width="200" alt="traneAI Logo">
+
+        <h2>Especialista em Treinos e Musculação</h2>
+
+        <p>Responda e descubra o treino ideal para você.</p>
+
+        <form action="processa.php" method="POST">
+
+            <div class="form-group">
+                <label>Qual grupo muscular deseja treinar?</label>
+
+                <select name="grupo_muscular" required>
+                    <option value="">Selecione...</option>
+                    <option value="Peito">Peito</option>
+                    <option value="Costas">Costas</option>
+                    <option value="Pernas">Pernas (Quadríceps / Posteriores)</option>
+                    <option value="Ombros">Ombros</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Qual o seu objetivo principal?</label>
+
+                <select name="objetivo" required>
+                    <option value="">Selecione...</option>
+                    <option value="Hipertrofia">Hipertrofia (Ganho de massa)</option>
+                    <option value="Definicao">Definição / Perda de gordura</option>
+                    <option value="Forca">Ganho de Força</option>
+                    <option value="Resistencia">Resistência Física</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Qual o seu nível de experiência?</label>
+
+                <select name="nivel" required>
+                    <option value="">Selecione...</option>
+                    <option value="Iniciante">Iniciante</option>
+                    <option value="Intermediario">Intermediário</option>
+                    <option value="Avancado">Avançado</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Onde você vai treina?</label>
+
+                <select name="local" required>
+                    <option value="">Selecione...</option>
+                    <option value="Academia">Academia (Aparelhos e pesos livre)</option>
+                    <option value="EmCasa">Em casa (Com Halteres/Kettlebell)</option>
+                    <option value="Calistenia">Calistenia (Apenas peso do corpo)</option>
+                </select>
+            </div>
+
+            <button type="submit">Recomendar Treino 🏋️‍♂️</button>
+            
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Posto da Rodela, rode a mil por hora!</title>
+</head>
+<body>
+  <h2>Abastecimento do Posto, escolha o seu combustível e quanto deseja!</h2>
+  <hr>
+  <p>Escolha o combustível entre: diesel, gasolina e etanol.</p>
+  
+  <form action="desa1.php" method="post">
+    <table>
+      <tr>
+        <td><label>Escolha o tipo de combustível: </label></td>
+        <td><input type="text" name="combustivel" required></td>
+      </tr>
+      <tr>
+        <td><label>Digite quantos litros deseja abastecer: </label></td>
+        <td><input type="number" name="litros" required></td>
+      </tr>
+      <tr>
+        <td></td> 
+        <td>
+          <button type="submit">Abastecer</button>
+          <button type="reset">Limpar</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
